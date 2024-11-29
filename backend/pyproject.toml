@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ollama-chat"
+version = "0.1.0"
+description = "A web-based chat application using Ollama LLM"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+ollama = "^0.1.6"
+python-dotenv = "^1.0.0"
+fastapi = "^0.109.0"
+uvicorn = "^0.27.0"
+httpx = {extras = ["socks"], version = "^0.27.0"}
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.1"
+isort = "^5.13.2"
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
